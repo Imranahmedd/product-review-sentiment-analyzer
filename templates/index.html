@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 </head>
 
 <body>
@@ -135,6 +136,40 @@
                     <h3 class="metrics-title">Model Performance</h3>
                     <div id="metrics-content" class="metrics-content">
                         <div class="loading-metrics">Loading metrics...</div>
+                    </div>
+                    <div id="metrics-charts" class="metrics-charts hidden">
+                        <div class="metrics-text-grid">
+                            <div class="metric-box">
+                                <div class="metric-label">Training Accuracy</div>
+                                <div class="metric-value" id="train-acc">-</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-label">Test Accuracy</div>
+                                <div class="metric-value" id="test-acc">-</div>
+                            </div>
+                            <div class="metric-box">
+                                <div class="metric-label">Vocabulary Size</div>
+                                <div class="metric-value" id="vocab-size">-</div>
+                            </div>
+                        </div>
+                        <div class="charts-grid">
+                            <div class="chart-container">
+                                <h4 class="chart-title">Precision</h4>
+                                <canvas id="precisionChart"></canvas>
+                            </div>
+                            <div class="chart-container">
+                                <h4 class="chart-title">Recall</h4>
+                                <canvas id="recallChart"></canvas>
+                            </div>
+                            <div class="chart-container">
+                                <h4 class="chart-title">F1-Score</h4>
+                                <canvas id="f1Chart"></canvas>
+                            </div>
+                        </div>
+                        <div class="implementation-note">
+                            <strong>✨ Built from Scratch:</strong> No external NLP libraries used. 
+                            All components (preprocessing, BoW, Naive Bayes, metrics) implemented manually.
+                        </div>
                     </div>
                 </div>
             </section>

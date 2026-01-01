@@ -151,49 +151,201 @@ async function loadMetrics() {
 
         const metrics = await response.json();
         const metricsContent = document.getElementById('metrics-content');
+        const metricsCharts = document.getElementById('metrics-charts');
 
-        if (!metricsContent) return;
+        if (!metricsContent || !metricsCharts) return;
 
+        // Update text metrics first
         const trainAcc = (metrics.train.accuracy * 100).toFixed(2);
         const testAcc = (metrics.test.accuracy * 100).toFixed(2);
+        
+        document.getElementById('train-acc').textContent = `${trainAcc}%`;
+        document.getElementById('test-acc').textContent = `${testAcc}%`;
+        document.getElementById('vocab-size').textContent = metrics.vocabulary_size;
+
+        // Hide loading, show charts
+        metricsContent.classList.add('hidden');
+        metricsCharts.classList.remove('hidden');
+
+        // Wait for DOM to update before creating charts
+        setTimeout(() => {
+            createMetricsCharts(metrics);
+        }, 50);
+    } catch (error) {
+        console.error('Error loading metrics:', error);
+    }
+}
+
+function createMetricsCharts(metrics) {
+    try {
+        // Create line chart comparing train vs test performance
+        
+        // Train metrics
+        const trainPrec = (metrics.train.precision * 100).toFixed(2);
+        const trainRec = (metrics.train.recall * 100).toFixed(2);
+        const trainF1 = (metrics.train.f1_score * 100).toFixed(2);
+        
+        // Test metrics
         const testPrec = (metrics.test.precision * 100).toFixed(2);
         const testRec = (metrics.test.recall * 100).toFixed(2);
         const testF1 = (metrics.test.f1_score * 100).toFixed(2);
 
-        metricsContent.innerHTML = `
-            <div class="metrics-grid">
-                <div class="metric-box">
-                    <div class="metric-label">Training Accuracy</div>
-                    <div class="metric-value">${trainAcc}%</div>
-                </div>
-                <div class="metric-box">
-                    <div class="metric-label">Test Accuracy</div>
-                    <div class="metric-value">${testAcc}%</div>
-                </div>
-                <div class="metric-box">
-                    <div class="metric-label">Precision</div>
-                    <div class="metric-value">${testPrec}%</div>
-                </div>
-                <div class="metric-box">
-                    <div class="metric-label">Recall</div>
-                    <div class="metric-value">${testRec}%</div>
-                </div>
-                <div class="metric-box">
-                    <div class="metric-label">F1-Score</div>
-                    <div class="metric-value">${testF1}%</div>
-                </div>
-                <div class="metric-box">
-                    <div class="metric-label">Vocabulary Size</div>
-                    <div class="metric-value">${metrics.vocabulary_size}</div>
-                </div>
-            </div>
-            <div class="implementation-note">
-                <strong>✨ Built from Scratch:</strong> No external NLP libraries used. 
-                All components (preprocessing, BoW, Naive Bayes, metrics) implemented manually.
-            </div>
-        `;
+        // Common chart options
+        const commonOptions = {
+            responsive: true,
+            maintainAspectRatio: true,
+            aspectRatio: 1.8,
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'top',
+                    labels: {
+                        color: 'rgba(241, 245, 249, 0.9)',
+                        font: {
+                            size: 12,
+                            weight: '500'
+                        },
+                        padding: 10,
+                        usePointStyle: true,
+                        pointStyle: 'circle'
+                    }
+                },
+                tooltip: {
+                    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                    padding: 12,
+                    titleFont: {
+                        size: 14,
+                        weight: 'bold'
+                    },
+                    bodyFont: {
+                        size: 13
+                    },
+                    callbacks: {
+                        label: function(context) {
+                            return `${context.dataset.label}: ${context.parsed.y}%`;
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    max: 100,
+                    title: {
+                        display: true,
+                        text: 'Performance (%)',
+                        color: 'rgba(241, 245, 249, 0.9)',
+                        font: {
+                            size: 12,
+                            weight: '600'
+                        },
+                        padding: {
+                            bottom: 8
+                        }
+                    },
+                    ticks: {
+                        callback: function(value) {
+                            return value + '%';
+                        },
+                        color: 'rgba(203, 213, 225, 0.9)',
+                        font: {
+                            size: 11
+                        }
+                    },
+                    grid: {
+                        color: 'rgba(255, 255, 255, 0.1)',
+                        lineWidth: 1
+                    }
+                },
+                x: {
+                    ticks: {
+                        color: 'rgba(203, 213, 225, 0.9)',
+                        font: {
+                            size: 12,
+                            weight: '500'
+                        }
+                    },
+                    grid: {
+                        color: 'rgba(255, 255, 255, 0.05)',
+                        lineWidth: 1
+                    }
+                }
+            }
+        };
+
+        // Precision Chart
+        const precisionCtx = document.getElementById('precisionChart').getContext('2d');
+        new Chart(precisionCtx, {
+            type: 'line',
+            data: {
+                labels: ['Training', 'Test'],
+                datasets: [{
+                    label: 'Precision',
+                    data: [trainPrec, testPrec],
+                    backgroundColor: 'rgba(59, 130, 246, 0.2)',
+                    borderColor: 'rgba(59, 130, 246, 1)',
+                    borderWidth: 3,
+                    pointBackgroundColor: 'rgba(59, 130, 246, 1)',
+                    pointBorderColor: '#fff',
+                    pointBorderWidth: 2,
+                    pointRadius: 8,
+                    pointHoverRadius: 10,
+                    tension: 0.3,
+                    fill: true
+                }]
+            },
+            options: commonOptions
+        });
+
+        // Recall Chart
+        const recallCtx = document.getElementById('recallChart').getContext('2d');
+        new Chart(recallCtx, {
+            type: 'line',
+            data: {
+                labels: ['Training', 'Test'],
+                datasets: [{
+                    label: 'Recall',
+                    data: [trainRec, testRec],
+                    backgroundColor: 'rgba(16, 185, 129, 0.2)',
+                    borderColor: 'rgba(16, 185, 129, 1)',
+                    borderWidth: 3,
+                    pointBackgroundColor: 'rgba(16, 185, 129, 1)',
+                    pointBorderColor: '#fff',
+                    pointBorderWidth: 2,
+                    pointRadius: 8,
+                    pointHoverRadius: 10,
+                    tension: 0.3,
+                    fill: true
+                }]
+            },
+            options: commonOptions
+        });
+
+        // F1-Score Chart
+        const f1Ctx = document.getElementById('f1Chart').getContext('2d');
+        new Chart(f1Ctx, {
+            type: 'line',
+            data: {
+                labels: ['Training', 'Test'],
+                datasets: [{
+                    label: 'F1-Score',
+                    data: [trainF1, testF1],
+                    backgroundColor: 'rgba(139, 92, 246, 0.2)',
+                    borderColor: 'rgba(139, 92, 246, 1)',
+                    borderWidth: 3,
+                    pointBackgroundColor: 'rgba(139, 92, 246, 1)',
+                    pointBorderColor: '#fff',
+                    pointBorderWidth: 2,
+                    pointRadius: 8,
+                    pointHoverRadius: 10,
+                    tension: 0.3,
+                    fill: true
+                }]
+            },
+            options: commonOptions
+        });
     } catch (error) {
-        console.error('Error loading metrics:', error);
+        console.error('Error creating charts:', error);
     }
 }
 

@@ -620,6 +620,56 @@ body {
     color: var(--color-primary-light);
 }
 
+.metrics-charts {
+    animation: fadeIn 0.5s ease;
+}
+
+.metrics-text-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+}
+
+.charts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.chart-container {
+    background: rgba(15, 23, 42, 0.5);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-lg);
+    width: 100%;
+    overflow: hidden;
+}
+
+.chart-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+}
+
+#precisionChart,
+#recallChart,
+#f1Chart {
+    max-height: 250px;
+    width: 100% !important;
+    height: auto !important;
+}
+
+
 
 /* ===========================
    Footer

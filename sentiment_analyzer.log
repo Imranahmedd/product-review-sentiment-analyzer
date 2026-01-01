@@ -1,0 +1,114 @@
+2026-01-02 03:40:59,577 - __main__ - INFO - Starting server on 0.0.0.0:5000 (debug=False)
+2026-01-02 03:41:00,468 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.108:5000
+2026-01-02 03:41:00,469 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-02 03:41:10,744 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:41:10] "GET / HTTP/1.1" 200 -
+2026-01-02 03:41:10,986 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:41:10] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-01-02 03:41:10,987 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:41:10] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-01-02 03:41:11,241 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:41:11] "GET /api/metrics HTTP/1.1" 200 -
+2026-01-02 03:41:11,607 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:41:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-02 03:42:50,677 - __main__ - INFO - Low confidence prediction: 0.4999
+2026-01-02 03:42:50,677 - __main__ - INFO - Prediction: Neutral (confidence: 0.4999)
+2026-01-02 03:42:50,677 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:42:50] "POST /api/predict HTTP/1.1" 200 -
+2026-01-02 03:43:09,206 - __main__ - INFO - Low confidence prediction: 0.4999
+2026-01-02 03:43:09,206 - __main__ - INFO - Prediction: Neutral (confidence: 0.4999)
+2026-01-02 03:43:09,219 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:43:09] "POST /api/predict HTTP/1.1" 200 -
+2026-01-02 03:43:11,377 - __main__ - INFO - Low confidence prediction: 0.4999
+2026-01-02 03:43:11,377 - __main__ - INFO - Prediction: Neutral (confidence: 0.4999)
+2026-01-02 03:43:11,377 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:43:11] "POST /api/predict HTTP/1.1" 200 -
+2026-01-02 03:43:27,639 - __main__ - INFO - Prediction: Neutral (confidence: 0.6848)
+2026-01-02 03:43:27,643 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:43:27] "POST /api/predict HTTP/1.1" 200 -
+2026-01-02 03:43:42,241 - __main__ - INFO - Prediction: Neutral (confidence: 0.9693)
+2026-01-02 03:43:42,256 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:43:42] "POST /api/predict HTTP/1.1" 200 -
+2026-01-02 03:50:31,804 - __main__ - INFO - Starting server on 0.0.0.0:5000 (debug=False)
+2026-01-02 03:50:32,687 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.108:5000
+2026-01-02 03:50:32,687 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-02 03:50:37,285 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:50:37] "GET / HTTP/1.1" 200 -
+2026-01-02 03:50:37,429 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:50:37] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-01-02 03:50:37,429 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:50:37] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-01-02 03:50:37,873 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:50:37] "GET /api/metrics HTTP/1.1" 200 -
+2026-01-02 03:52:31,992 - __main__ - INFO - Starting server on 0.0.0.0:5000 (debug=False)
+2026-01-02 03:52:32,870 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.108:5000
+2026-01-02 03:52:32,870 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-02 03:52:36,480 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:52:36] "GET / HTTP/1.1" 200 -
+2026-01-02 03:52:36,664 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:52:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-02 03:52:36,665 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:52:36] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-01-02 03:52:36,739 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:52:36] "GET /api/metrics HTTP/1.1" 200 -
+2026-01-02 03:53:03,322 - __main__ - INFO - Low confidence prediction: 0.4999
+2026-01-02 03:53:03,322 - __main__ - INFO - Prediction: Neutral (confidence: 0.4999)
+2026-01-02 03:53:03,332 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:53:03] "POST /api/predict HTTP/1.1" 200 -
+2026-01-02 03:55:27,136 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:55:27] "GET / HTTP/1.1" 200 -
+2026-01-02 03:55:27,199 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:55:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-02 03:55:27,199 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:55:27] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-01-02 03:55:27,307 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:55:27] "GET /api/metrics HTTP/1.1" 200 -
+2026-01-02 03:57:08,572 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:57:08] "GET / HTTP/1.1" 200 -
+2026-01-02 03:57:08,607 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:57:08] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-01-02 03:57:08,609 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:57:08] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-01-02 03:57:08,686 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:57:08] "GET /api/metrics HTTP/1.1" 200 -
+2026-01-02 03:57:22,639 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:57:22] "GET / HTTP/1.1" 200 -
+2026-01-02 03:57:22,652 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:57:22] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-01-02 03:57:22,655 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:57:22] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-01-02 03:57:23,004 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:57:23] "GET /api/metrics HTTP/1.1" 200 -
+2026-01-02 03:57:23,114 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:57:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-02 03:58:42,601 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:58:42] "GET / HTTP/1.1" 200 -
+2026-01-02 03:58:42,699 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:58:42] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-01-02 03:58:42,699 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:58:42] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-01-02 03:58:42,756 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:58:42] "GET /api/metrics HTTP/1.1" 200 -
+2026-01-02 03:59:19,147 - __main__ - INFO - Starting server on 0.0.0.0:5000 (debug=False)
+2026-01-02 03:59:19,998 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.108:5000
+2026-01-02 03:59:19,998 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-02 03:59:25,466 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:59:25] "GET / HTTP/1.1" 200 -
+2026-01-02 03:59:25,622 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:59:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-02 03:59:25,632 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:59:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-01-02 03:59:25,732 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 03:59:25] "GET /api/metrics HTTP/1.1" 200 -
+2026-01-02 04:00:05,184 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:00:05] "GET / HTTP/1.1" 200 -
+2026-01-02 04:00:05,209 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:00:05] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-01-02 04:00:05,212 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:00:05] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-01-02 04:00:05,294 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:00:05] "GET /api/metrics HTTP/1.1" 200 -
+2026-01-02 04:00:48,605 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:00:48] "GET / HTTP/1.1" 200 -
+2026-01-02 04:00:48,632 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:00:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-02 04:00:48,639 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:00:48] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-01-02 04:00:48,693 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:00:48] "GET /api/metrics HTTP/1.1" 200 -
+2026-01-02 04:00:54,522 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:00:54] "GET / HTTP/1.1" 200 -
+2026-01-02 04:00:54,537 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:00:54] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-01-02 04:00:54,539 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:00:54] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-01-02 04:00:54,853 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:00:54] "GET /api/metrics HTTP/1.1" 200 -
+2026-01-02 04:00:55,104 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:00:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-02 04:01:06,031 - __main__ - INFO - Starting server on 0.0.0.0:5000 (debug=False)
+2026-01-02 04:01:06,887 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.108:5000
+2026-01-02 04:01:06,887 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-02 04:01:09,173 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:01:09] "GET / HTTP/1.1" 200 -
+2026-01-02 04:01:09,320 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:01:09] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-01-02 04:01:09,320 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:01:09] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-01-02 04:01:09,376 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:01:09] "GET /api/metrics HTTP/1.1" 200 -
+2026-01-02 04:01:09,521 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:01:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-02 04:01:25,961 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:01:25] "GET / HTTP/1.1" 200 -
+2026-01-02 04:01:25,989 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:01:25] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-01-02 04:01:25,994 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:01:25] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-01-02 04:01:26,273 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:01:26] "GET /api/metrics HTTP/1.1" 200 -
+2026-01-02 04:01:26,429 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:01:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-02 04:01:34,327 - __main__ - INFO - Starting server on 0.0.0.0:5000 (debug=False)
+2026-01-02 04:01:35,181 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.108:5000
+2026-01-02 04:01:35,181 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-02 04:01:37,754 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:01:37] "GET / HTTP/1.1" 200 -
+2026-01-02 04:01:37,884 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:01:37] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-01-02 04:01:37,903 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:01:37] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-01-02 04:01:37,958 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:01:37] "GET /api/metrics HTTP/1.1" 200 -
+2026-01-02 04:01:38,143 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:01:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
