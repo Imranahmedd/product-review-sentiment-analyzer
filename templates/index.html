@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Analyze product reviews instantly with AI-powered sentiment analysis. Determine if reviews are positive or negative.">
+    <title>Product Review Sentiment Analyzer | NLP Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">Product Review Sentiment Analyzer</h1>
+                <p class="subtitle">Powered by Natural Language Processing</p>
+            </div>
+            <div class="header-badge">
+                <span class="badge">NLP Project</span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="input-section">
+                <div class="input-wrapper">
+                    <label for="review-input" class="input-label">
+                        <span class="label-text">Enter Product Review</span>
+                        <span class="label-hint">Type or paste a product review to analyze its sentiment</span>
+                    </label>
+                    <textarea id="review-input" class="review-textarea"
+                        placeholder="Example: This camera is absolutely amazing! The picture quality is outstanding and the battery lasts all day."
+                        rows="6"></textarea>
+                    <div class="char-counter">
+                        <span id="char-count">0</span> characters
+                    </div>
+                </div>
+
+                <button id="analyze-btn" class="analyze-btn">
+                    <span class="btn-text">Analyze Sentiment</span>
+                    <span class="btn-icon">→</span>
+                </button>
+            </section>
+
+            <section id="result-section" class="result-section hidden">
+                <div class="result-card">
+                    <div class="result-header">
+                        <h2 class="result-title">Analysis Result</h2>
+                        <button id="reset-btn" class="reset-btn" title="Clear and analyze another review">
+                            <span>✕</span>
+                        </button>
+                    </div>
+
+                    <div class="result-content">
+                        <div class="sentiment-display">
+                            <div id="sentiment-icon" class="sentiment-icon"></div>
+                            <div class="sentiment-info">
+                                <span class="sentiment-label">Sentiment</span>
+                                <h3 id="sentiment-value" class="sentiment-value">Positive</h3>
+                            </div>
+                        </div>
+
+                        <div class="confidence-display">
+                            <div class="confidence-header">
+                                <span class="confidence-label">Confidence Score</span>
+                                <span id="confidence-value" class="confidence-value">85%</span>
+                            </div>
+                            <div class="confidence-bar">
+                                <div id="confidence-fill" class="confidence-fill"></div>
+                            </div>
+                        </div>
+
+                        <div class="score-breakdown">
+                            <div class="score-item positive-item">
+                                <span class="score-icon">😊</span>
+                                <div class="score-details">
+                                    <span class="score-label">Positive Probability</span>
+                                    <span id="positive-count" class="score-count">0%</span>
+                                </div>
+                            </div>
+                            <div class="score-item neutral-item">
+                                <span class="score-icon">😐</span>
+                                <div class="score-details">
+                                    <span class="score-label">Neutral Probability</span>
+                                    <span id="neutral-count" class="score-count">0%</span>
+                                </div>
+                            </div>
+                            <div class="score-item negative-item">
+                                <span class="score-icon">😞</span>
+                                <div class="score-details">
+                                    <span class="score-label">Negative Probability</span>
+                                    <span id="negative-count" class="score-count">0%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="info-section">
+                <div class="info-card">
+                    <h3 class="info-title">How It Works</h3>
+                    <div class="info-steps">
+                        <div class="info-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Text Preprocessing</h4>
+                                <p>Lowercasing, tokenization, stopword removal</p>
+                            </div>
+                        </div>
+                        <div class="info-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Bag-of-Words</h4>
+                                <p>Convert text to numerical feature vectors</p>
+                            </div>
+                        </div>
+                        <div class="info-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Naive Bayes</h4>
+                                <p>ML classifier predicts sentiment with probability</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="metrics-section">
+                <div class="metrics-card">
+                    <h3 class="metrics-title">Model Performance</h3>
+                    <div id="metrics-content" class="metrics-content">
+                        <div class="loading-metrics">Loading metrics...</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>Created by: Afnan Abbas, Jawad Hussain, Imran Ahmed, Abdul Basit Farroqui</p>
+            <p class="footer-course">CIC-401 | Natural Language Processing</p>
+        </footer>
+    </div>
+
+    <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="spinner"></div>
+        <p class="loading-text">Analyzing sentiment...</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>
