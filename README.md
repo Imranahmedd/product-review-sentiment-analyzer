@@ -200,7 +200,8 @@ Predicts sentiment for a given review text.
 ```
 
 #### Model Metric Evaluation
-! (assets/4.png)
+![Model Metric Evaluation](assets/4.png)
+
 
 ## Project Implementation Details
 
