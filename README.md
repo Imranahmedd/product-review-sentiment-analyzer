@@ -45,10 +45,10 @@ The **Product Review Sentiment Analyzer** is a Natural Language Processing (NLP)
 
 | Name | Roll Number | 
 |------|-------------|
-| [Afnan Abbas] | [22SP-060-SE] |
-| [Muhammad Imran] | [22SP-009-SE] |
-| [Abdul Basit Farooqui] | [22SP-015-SE] |
-| [Muhammad Jawad Hussian] | [22SP-007-SE] |
+| Afnan Abbas | 22SP-060-SE |
+| Muhammad Imran | 22SP-009-SE |
+| Abdul Basit Farooqui | 22SP-015-SE |
+| Muhammad Jawad Hussian | 22SP-007-SE |
 
 
 ## Installation & Setup
@@ -140,6 +140,10 @@ Model ready for predictions!
 4. Click the **"Analyze Sentiment"** button
 5. View the prediction result with confidence score
 
+#### Home Screen
+![Home Screen](assets/1.png)
+*Web interface showing the input area for product reviews*
+
 ### Example Reviews to Test
 
 **Positive Review:**
@@ -153,6 +157,14 @@ Highly recommend for photography enthusiasts. Best purchase ever!
 Very disappointed with this product. It broke after one week. The customer service is terrible and 
 refused to provide a refund. Waste of money!
 ```
+
+#### Positive Sentiment Analysis Result
+![Positive Result](assets/2.png)
+*Example of a positive sentiment prediction with confidence score*
+
+#### Negative Sentiment Analysis Result
+![Negative Result](assets/3.png)
+*Example of a negative sentiment prediction with confidence score*
 
 ## API Endpoints
 
@@ -186,6 +198,9 @@ Predicts sentiment for a given review text.
   "error": "Review text cannot be empty"
 }
 ```
+
+#### Model Metric Evaluation
+!(assets/4.png)
 
 ## Project Implementation Details
 

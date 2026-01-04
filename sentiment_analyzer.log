@@ -134,3 +134,26 @@
 2026-01-02 11:31:33,785 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 11:31:33] "GET /static/js/script.js HTTP/1.1" 200 -
 2026-01-02 11:31:34,113 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 11:31:34] "GET /api/metrics HTTP/1.1" 200 -
 2026-01-02 11:31:34,567 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 11:31:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-04 18:22:01,052 - __main__ - INFO - Starting server on 0.0.0.0:5000 (debug=False)
+2026-01-04 18:22:01,918 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+2026-01-04 18:22:01,918 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-04 18:22:15,800 - werkzeug - INFO - 127.0.0.1 - - [04/Jan/2026 18:22:15] "GET / HTTP/1.1" 200 -
+2026-01-04 18:22:15,924 - werkzeug - INFO - 127.0.0.1 - - [04/Jan/2026 18:22:15] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-01-04 18:22:16,032 - werkzeug - INFO - 127.0.0.1 - - [04/Jan/2026 18:22:16] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-01-04 18:22:16,688 - werkzeug - INFO - 127.0.0.1 - - [04/Jan/2026 18:22:16] "GET /api/metrics HTTP/1.1" 200 -
+2026-01-04 18:22:16,950 - werkzeug - INFO - 127.0.0.1 - - [04/Jan/2026 18:22:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-04 18:23:08,916 - __main__ - INFO - Prediction: Positive (confidence: 1.0000)
+2026-01-04 18:23:08,916 - werkzeug - INFO - 127.0.0.1 - - [04/Jan/2026 18:23:08] "POST /api/predict HTTP/1.1" 200 -
+2026-01-04 18:23:41,224 - werkzeug - INFO - 127.0.0.1 - - [04/Jan/2026 18:23:41] "GET / HTTP/1.1" 200 -
+2026-01-04 18:23:41,270 - werkzeug - INFO - 127.0.0.1 - - [04/Jan/2026 18:23:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-04 18:23:41,481 - werkzeug - INFO - 127.0.0.1 - - [04/Jan/2026 18:23:41] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2026-01-04 18:23:41,564 - werkzeug - INFO - 127.0.0.1 - - [04/Jan/2026 18:23:41] "GET /api/metrics HTTP/1.1" 200 -
+2026-01-04 18:23:45,270 - __main__ - INFO - Prediction: Positive (confidence: 1.0000)
+2026-01-04 18:23:45,272 - werkzeug - INFO - 127.0.0.1 - - [04/Jan/2026 18:23:45] "POST /api/predict HTTP/1.1" 200 -
+2026-01-04 18:24:35,396 - __main__ - INFO - Prediction: Positive (confidence: 1.0000)
+2026-01-04 18:24:35,397 - werkzeug - INFO - 127.0.0.1 - - [04/Jan/2026 18:24:35] "POST /api/predict HTTP/1.1" 200 -
+2026-01-04 18:25:39,337 - __main__ - INFO - Prediction: Negative (confidence: 1.0000)
+2026-01-04 18:25:39,337 - werkzeug - INFO - 127.0.0.1 - - [04/Jan/2026 18:25:39] "POST /api/predict HTTP/1.1" 200 -
