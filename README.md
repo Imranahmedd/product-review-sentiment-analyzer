@@ -151,16 +151,16 @@ Model ready for predictions!
 This camera is absolutely amazing! The picture quality is outstanding and the battery lasts all day. 
 Highly recommend for photography enthusiasts. Best purchase ever!
 ```
+#### Positive Sentiment Analysis Result
+![Positive Result](assets/2.png)
+*Example of a positive sentiment prediction with confidence score*
+
 
 **Negative Review:**
 ```
 Very disappointed with this product. It broke after one week. The customer service is terrible and 
 refused to provide a refund. Waste of money!
 ```
-
-#### Positive Sentiment Analysis Result
-![Positive Result](assets/2.png)
-*Example of a positive sentiment prediction with confidence score*
 
 #### Negative Sentiment Analysis Result
 ![Negative Result](assets/3.png)
