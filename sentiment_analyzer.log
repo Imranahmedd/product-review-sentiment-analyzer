@@ -112,3 +112,25 @@
 2026-01-02 04:01:37,903 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:01:37] "GET /static/js/script.js HTTP/1.1" 200 -
 2026-01-02 04:01:37,958 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:01:37] "GET /api/metrics HTTP/1.1" 200 -
 2026-01-02 04:01:38,143 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 04:01:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-02 11:29:05,301 - __main__ - INFO - Starting server on 0.0.0.0:5000 (debug=False)
+2026-01-02 11:29:05,333 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.53.25:5000
+2026-01-02 11:29:05,334 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-02 11:29:18,450 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 11:29:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-02 11:29:18,814 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 11:29:18] "GET / HTTP/1.1" 200 -
+2026-01-02 11:29:19,017 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 11:29:19] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-01-02 11:29:19,078 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 11:29:19] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-01-02 11:29:19,577 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 11:29:19] "GET /api/metrics HTTP/1.1" 200 -
+2026-01-02 11:29:21,056 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 11:29:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-02 11:29:33,005 - __main__ - INFO - Low confidence prediction: 0.4173
+2026-01-02 11:29:33,005 - __main__ - INFO - Prediction: Negative (confidence: 0.4173)
+2026-01-02 11:29:33,007 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 11:29:33] "POST /api/predict HTTP/1.1" 200 -
+2026-01-02 11:30:21,664 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 11:30:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-01-02 11:30:21,700 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 11:30:21] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2026-01-02 11:31:33,756 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 11:31:33] "GET / HTTP/1.1" 200 -
+2026-01-02 11:31:33,782 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 11:31:33] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-01-02 11:31:33,785 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 11:31:33] "GET /static/js/script.js HTTP/1.1" 200 -
+2026-01-02 11:31:34,113 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 11:31:34] "GET /api/metrics HTTP/1.1" 200 -
+2026-01-02 11:31:34,567 - werkzeug - INFO - 127.0.0.1 - - [02/Jan/2026 11:31:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

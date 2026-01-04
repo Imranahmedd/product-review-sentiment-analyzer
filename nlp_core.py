@@ -106,7 +106,6 @@ class TextPreprocessor:
     def _handle_negations(self, tokens):
         """
         Handle negations by marking words following negation words.
-        Built from scratch without external libraries.
         
         Args:
             tokens (list): List of tokens
